@@ -1,0 +1,6 @@
+torch
+torchvision
+coremltools
+opencv-python
+scikit-learn
+scikit-image
