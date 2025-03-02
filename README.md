@@ -1,7 +1,11 @@
 # DINOv2 CoreML
 DINOv2 in CoreML. Conversion scripts and live webcam demo.
 
-![DINOv2 CoreML Demo](media/dinov2coreml.mov)
+
+
+https://github.com/user-attachments/assets/578808c7-aad3-40ce-ab28-6b446b1e3d4d
+
+
 
 ## Installation
 
