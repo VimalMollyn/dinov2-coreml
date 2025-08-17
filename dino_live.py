@@ -7,6 +7,7 @@ import coremltools as ct
 import time
 
 model = ct.models.MLModel("dinov2_small_14_registers_518_fp16.mlpackage", compute_units=ct.ComputeUnit.ALL)
+# model = ct.models.MLModel("dinov2_small_14_registers_518_fp16.mlpackage", compute_units=ct.ComputeUnit.CPU_AND_GPU)
 patch_size = 14
 
 # Define image transformation
@@ -86,7 +87,7 @@ def process_frame(frame):
 
 def main():
     print("Starting webcam...")
-    cap = cv2.VideoCapture(1)  # Use 0 for default camera, or change to specific camera index
+    cap = cv2.VideoCapture(0)  # Use 0 for default camera, or change to specific camera index
     
     if not cap.isOpened():
         print("Error: Could not open webcam.")
